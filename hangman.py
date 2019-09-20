@@ -1,22 +1,8 @@
-#Display files in current working directory
-    #import os
-    #os.listdir()
-#Display current working directory 名
-    #os.getcwd()
-#Change working directory
-    #os.chdir('/Users/sigRick15/Desktop/Python 6.0001 Files/ps2')
-
-# Problem Set 2, hangman.py
-# Name: 
-# Collaborators:
-# Time spent:
+# Don't forget to set the proper working directory!
+# words.txt MUST be downloaded in the same folder as hangman.py (this document) or else it won't run properly.
 
 # Hangman Game
-# -----------------------------------
-# Helper code
-# You don't need to understand this helper code,
-# but you will have to know how to use the functions
-# (so be sure to read the docstrings!)
+
 import random
 import string
 
@@ -219,12 +205,7 @@ def hangman(secret_word):
         print("The word was '" + secret_word + "'.")
         print("Game over")
 
-# When you've completed your hangman function, scroll down to the bottom
-# of the file and uncomment the first two lines to test
-#(hint: you might want to pick your own
-# secret_word while you're doing your own testing)
-
-
+        
 # -----------------------------------
 
 
@@ -438,26 +419,9 @@ def hangman_with_hints(secret_word):
         print("Oh no, you ran out of guesses ):")
         print("The word was '" + secret_word + "'.")
         print("Game over")
-
-
-# When you've completed your hangman_with_hint function, comment the two similar
-# lines above that were used to run the hangman function, and then uncomment
-# these two lines and run this file to test!
-# Hint: You might want to pick your own secret_word while you're testing.
+        
 
 if __name__ == "__main__":
-#    # pass
-#
-#    # To test part 2, comment out the pass line above and
-#    # uncomment the following two lines.
-#    
-#    secret_word = choose_word(wordlist)
-#    hangman(secret_word)
-
-###############
-    
-    # To test part 3 re-comment out the above lines and 
-    # uncomment the following two lines. 
     
     secret_word = choose_word(wordlist)
     hangman_with_hints(secret_word)
